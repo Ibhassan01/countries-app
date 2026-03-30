@@ -12,10 +12,10 @@ const NavBar = () => {
     }, [isDark])
 
     return (
-        <nav className="flex items-center justify-between px-4 py-6 shadow-md bg-background-light dark:bg-background-dark transition-colors duration-300 md:px-20">
-            <h1 className="font-bold text-text-dark dark:text-text-white">Where in the world</h1>
+        <nav className="flex items-center justify-between px-4 py-6 shadow-md bg-app-element transition-colors duration-300 md:px-20">
+            <h1 className="font-bold text-app-text">Where in the world</h1>
             <button 
-            className="flex items-center gap-2 font-semibold text-text-dark dark:text-text-light cursor-pointer"
+            className="flex items-center gap-2 font-semibold text-app-text cursor-pointer"
             onClick={() => setIsDark(!isDark)}>
                 {isDark ? <Sun size={20}/> : <Moon size={20}/>}
                 {isDark ? 'White' : 'Dark'}

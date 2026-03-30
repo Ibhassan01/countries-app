@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-app-bg: hsl(0, 0%, 98%);
+  --color-app-element: hsl(0, 100%, 100%);
+  --color-app-text: hsl(200, 15%, 8%);
+  --color-app-input: hsl(0, 0%, 52%);
+}
+
+:root {
+  --color-app-bg: hsl(0, 0%, 98%);
+  --color-app-element: hsl(0, 100%, 100%);
+  --color-app-text: hsl(200, 15%, 8%);
+  --color-app-input: hsl(0, 0%, 52%);
+}
+
+.dark {
+  --color-app-bg: hsl(207, 26%, 17%);
+  --color-app-element: hsl(209, 23%, 22%);
+  --color-app-text: hsl(0, 0%, 100%);
+}
