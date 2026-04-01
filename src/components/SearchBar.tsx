@@ -17,7 +17,7 @@ const SeacrchBar = ({ onSearch }: searchBarProps) => {
                 placeholder="Search for a country ...."
                 onChange={(e) => onSearch(e.target.value)}
                 aria-label="Search for a country"
-                className="w-full rounded-md border-none bg-app-el py-4 pl-20 pr-8 text-sm text-app-text shadow-md outline-none placeholder:text-app-input focus:ring-2 focus:ring-app-input/20 transition-all"
+                className="w-full rounded-md border-none bg-app-element py-4 pl-20 pr-8 text-sm text-app-text shadow-md outline-none placeholder:text-app-input focus:ring-2 focus:ring-app-input/20 transition-all"
             />
         </div>
     );
