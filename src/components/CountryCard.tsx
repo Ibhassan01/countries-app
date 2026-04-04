@@ -1,5 +1,6 @@
 import React from "react";
 import { Country } from "@/types/country";
+import { Link } from "react-router-dom";
 
 interface CountryCardProps {
   country: Country;
@@ -7,7 +8,8 @@ interface CountryCardProps {
 
 export const CountryCard = ({ country }: CountryCardProps) => {
   return (
-    <article className="flex flex-col h-full overflow-hidden rounded-md bg-app-element shadow-sm transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
+    <Link to={`/country/${country.cca3}`}>
+        <article className="flex flex-col h-full overflow-hidden rounded-md bg-app-element shadow-sm transition-transform duration-300 hover:scale-[1.02] cursor-pointer">
       <div className="aspect-16/10 w-full overflow-hidden">
         <img 
           src={country.flags.svg} 
@@ -42,5 +44,6 @@ export const CountryCard = ({ country }: CountryCardProps) => {
         </div>
       </div>
     </article>
+    </Link>
   );
 };

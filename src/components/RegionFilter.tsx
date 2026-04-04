@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import React, { useState } from "react";
+// import { Country } from "@/types/country";
 
 const REGIONS = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];
 
@@ -33,7 +34,7 @@ const RegionFilter = ({ onFilter, selectedRegion }: FilterRegionProps) => {
                         All Regions
                     </li>
                     {REGIONS.map((region) => (
-                        <li
+                        <li key={region}
                             onClick={() => { onFilter(region); setIsOpen(false) }}
                             className="cursor-pointer px-6 py-2 hover:bg-app-bg text-app-text transition-colors"
                         >
