@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from 'react'
+import { ReactNode, useEffect, useState } from 'react'
 import { Country } from '@/types/country'
 import localData from '@/data.json'
 import { CountryContext } from './CountryContext'
