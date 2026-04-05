@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { useCountries } from "@/hooks/useCountries";
 import SearchBar from "@/components/SearchBar";
 import RegionFilter from "@/components/RegionFilter";
