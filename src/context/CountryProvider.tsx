@@ -7,7 +7,7 @@ import { CountryContext } from './CountryContext'
 const FIELDS = 'name,flags,population,region,subregion,capital,tld,currencies,languages,cca3'
 
 export const CountryProvider = ({ children }: { children: ReactNode }) => {
-    const [countries, setCountries] = useState<Country[]>()
+    const [countries, setCountries] = useState<Country[]>([])
     const [isLoading, setIsLoadig] = useState(true)
     const [error, setError] = useState<string | null>(null)
 

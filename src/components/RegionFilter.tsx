@@ -1,5 +1,5 @@
 import { ChevronDown } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 // import { Country } from "@/types/country";
 
 const REGIONS = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];

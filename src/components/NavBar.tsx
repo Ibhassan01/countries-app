@@ -1,5 +1,4 @@
-// import { useEffect, useState } from "react";
-import React, {useState, useEffect} from "react";
+import {useState, useEffect} from "react";
 import { Moon, Sun } from "lucide-react";
 const NavBar = () => {
     const [isDark, setIsDark] = useState(false);
